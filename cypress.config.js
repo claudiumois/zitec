@@ -2,11 +2,13 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   chromeWebSecurity: false,
-  defaultCommandTimeout: 10000,
-  execTimeout: 10000,
-  pageLoadTimeout: 10000,
-  requestTimeout: 10000,
-  responseTimeout: 10000,
+  viewportHeight: 1080,
+  viewportWidth: 1920,
+  defaultCommandTimeout: 20000,
+  execTimeout: 20000,
+  pageLoadTimeout: 20000,
+  requestTimeout: 20000,
+  responseTimeout: 20000,
   e2e: {
     baseUrl: "http://automationpractice.com/index.php",
     setupNodeEvents(on, config) {
